@@ -228,23 +228,23 @@ class ProductsAPITest {
 
     class SearchSubject private constructor(
         failureMetadata: FailureMetadata,
-        private val actual: Search,
+        private val actual: Search?,
     ) : Subject(failureMetadata, actual) {
 
         fun hasFoundProducts() {
-            check("count").that(actual.count.toInt()).isGreaterThan(0)
+            check("count").that(actual!!.count.toInt()).isGreaterThan(0)
             check("products").that(actual.products).isNotEmpty()
         }
 
         fun hasFoundNoProducts() {
-            check("count").that(actual.count.toInt()).isEqualTo(0)
+            check("count").that(actual!!.count.toInt()).isEqualTo(0)
             check("products").that(actual.products).isEmpty()
         }
 
         companion object {
             private fun searches() = Factory(::SearchSubject)
 
-            fun assertThat(actual: Search): SearchSubject {
+            fun assertThat(actual: Search?): SearchSubject {
                 return assertAbout(searches()).that(actual)
             }
         }
