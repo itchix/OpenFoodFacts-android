@@ -28,6 +28,7 @@ import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.content.edit
 import androidx.core.content.pm.PackageInfoCompat
 import androidx.core.net.toUri
@@ -395,9 +396,11 @@ class PreferencesFragment : PreferenceFragmentCompat(), INavigationItem {
                                         pref.summary = null
                                         pref.widgetLayoutResource = R.layout.loading
                                     }
+
                                     WorkInfo.State.SUCCEEDED -> {
                                         setupAnalysisTagConfigs()
                                     }
+
                                     else -> Unit  // Nothing
                                 }
                             }
@@ -416,7 +419,15 @@ class PreferencesFragment : PreferenceFragmentCompat(), INavigationItem {
 
         key = config.type
         title = getString(R.string.display_analysis_tag_status, config.typeName.lowercase(Locale.getDefault()))
-
+        val drawable = when (config.typeName.lowercase(Locale.getDefault())) {
+            "palm oil" -> R.drawable.ic_preference_drop
+            "vegan" -> R.drawable.ic_preference_vegan
+            "vegetarian" -> R.drawable.ic_preference_vegetarian
+            else -> null
+        }
+        drawable?.let {
+            icon = ContextCompat.getDrawable(requireContext(), it)
+        }
         summary = null
         summaryOn = null
         summaryOff = null
