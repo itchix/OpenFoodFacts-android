@@ -161,7 +161,7 @@ truth-java8 = { module = "com.google.truth.extensions:truth-java8-extension", ve
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit5" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
-orchestrator = "androidx.test:orchestrator:1.4.1"
+orchestrator = "androidx.test:orchestrator:1.4.2"
 
 # Hilt Testing
 hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
