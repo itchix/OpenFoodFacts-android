@@ -118,7 +118,7 @@ easyimage = "com.github.jkwiecien:EasyImage:1.4.0"
 
 # Barcode and QR Scanner
 # TODO: cannot upgrade, requires API 24 or higher
-zxing-core = "com.google.zxing:core:3.5.2"
+zxing-core = "com.google.zxing:core:3.5.3"
 zxing-android-embedded = "com.journeyapps:zxing-android-embedded:3.6.0"
 
 # UI Component : ImageView with Zooming
