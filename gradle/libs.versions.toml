@@ -148,7 +148,7 @@ showcaseview = "com.github.mreram:showcaseview:1.0.5"
 # Unit Testing
 androidx-arch-core-testing = "androidx.arch.core:core-testing:2.1.0"
 junit = "junit:junit:4.13.2"
-robolectric = "org.robolectric:robolectric:4.10"
+robolectric = "org.robolectric:robolectric:4.12.1"
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "org-mockito" }
 mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:5.1.0"
 mockito-junit-jupiter = { module = "org.mockito:mockito-junit-jupiter", version.ref = "org-mockito" }
