@@ -113,7 +113,7 @@ GEM
     fastlane-plugin-get_version_code (0.2.0)
     fastlane-plugin-get_version_name (0.2.2)
     fastlane-plugin-increment_version_code (0.4.3)
-    fastlane-plugin-sentry (1.22.0)
+    fastlane-plugin-sentry (1.22.1)
       os (~> 1.1, >= 1.1.4)
     fastlane-plugin-versioning_android (0.1.1)
     gh_inspector (1.1.3)
