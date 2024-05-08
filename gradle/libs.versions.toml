@@ -45,7 +45,7 @@ kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines
 test-kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines" }
 
 # Android KTX
-android-ktx-fragment = "androidx.fragment:fragment-ktx:1.5.6"
+android-ktx-fragment = "androidx.fragment:fragment-ktx:1.7.0"
 android-ktx-activity = "androidx.activity:activity-ktx:1.7.0"
 android-ktx-preference = "androidx.preference:preference-ktx:1.2.0"
 android-ktx-core = "androidx.core:core-ktx:1.8.0"
