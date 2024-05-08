@@ -66,7 +66,7 @@ androidx-constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
 androidx-multidex = "androidx.multidex:multidex:2.0.1"
 androidx-viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
 androidx-startup-runtime = "androidx.startup:startup-runtime:1.1.1"
-androidx-work-runtime = "androidx.work:work-runtime-ktx:2.7.1"
+androidx-work-runtime = "androidx.work:work-runtime-ktx:2.9.0"
 androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
 
