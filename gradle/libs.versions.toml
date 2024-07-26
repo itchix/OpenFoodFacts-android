@@ -139,7 +139,7 @@ android-image-cropper = "com.github.CanHub:Android-Image-Cropper:3.1.3"
 nachos = "com.github.hootsuite:nachos:1.2.0"
 
 # Crash analytics
-sentry-android = "io.sentry:sentry-android:7.3.0"
+sentry-android = "io.sentry:sentry-android:7.12.1"
 matomo = "com.github.matomo-org:matomo-sdk-android:4.1.4"
 
 # ShowCaseView dependency
