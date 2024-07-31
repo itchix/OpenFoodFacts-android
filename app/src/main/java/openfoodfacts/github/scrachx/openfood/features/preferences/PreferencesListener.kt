@@ -13,7 +13,7 @@ class PreferencesListener @Inject constructor(
 ) : SharedPreferences.OnSharedPreferenceChangeListener {
 
 
-    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences, key: String) {
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences, key: String?) {
         when (key) {
             context.getString(R.string.pref_enable_mobile_data_key) -> {
                 ProductUploaderWorker.scheduleProductUpload(context, sharedPreferences)
