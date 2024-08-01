@@ -173,7 +173,7 @@ dependencies {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
 
     testBuildType = obtainTestBuildType()
 
@@ -192,7 +192,7 @@ android {
         applicationId = "openfoodfacts.github.scrachx.openfood"
 
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
 
         versionCode = 582
         versionName = "3.9.0"
