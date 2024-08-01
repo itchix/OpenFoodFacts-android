@@ -29,13 +29,15 @@ jobs:
 
       - name: Run unit tests
         uses: gradle/actions/setup-gradle@v3.5.0
-        with:
-          arguments: >
-            testObfPlaystoreDebugUnitTest
-            testOffPlaystoreDebugUnitTest
-            testOpfPlaystoreDebugUnitTest
-            testOpffPlaystoreDebugUnitTest
-
+      - name: Run the tests for OBF
+        run: ./gradlew testObfPlaystoreDebugUnitTest
+      - name: Run the tests for OFF
+        run: ./gradlew testOffPlaystoreDebugUnitTest
+      - name: Run the tests OPF
+        run: ./gradlew testOpfPlaystoreDebugUnitTest
+      - name: Run the tests for OPFF
+        run: ./gradlew testOpffPlaystoreDebugUnitTest
+        
   deploy-opf:
     name: "🚀 Deploy OPF to Google Play"
     runs-on: ubuntu-20.04
