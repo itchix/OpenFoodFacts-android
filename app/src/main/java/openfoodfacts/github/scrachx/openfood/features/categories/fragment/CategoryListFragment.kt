@@ -82,6 +82,7 @@ class CategoryListFragment : BaseFragment() {
         super.onDestroyView()
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_main, menu)
         val searchManager = requireActivity().getSystemService<SearchManager>()!!

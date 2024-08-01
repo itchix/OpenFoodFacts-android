@@ -110,6 +110,7 @@ class AllergensAlertFragment : NavigationBaseFragment() {
         _binding = null
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         // Set search as invisible
         menu.findItem(R.id.action_search).isVisible = false
