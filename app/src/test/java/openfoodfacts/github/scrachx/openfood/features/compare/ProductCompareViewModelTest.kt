@@ -70,7 +70,8 @@ class ProductCompareViewModelTest {
     fun addProductToCompare_shouldEmitAlreadyExistEvent_whenTheSameProductAdded() = runBlockingTest {
         // GIVEN
         val product = mockk<Product> {
-            every { barcode } returns Barcode("qwerty")
+            every { code } returns "qwerty"
+            every { barcode } returns Barcode(code)
             every { additivesTags } returns mutableListOf()
         }
 
@@ -121,6 +122,7 @@ class ProductCompareViewModelTest {
             .returns(AdditiveName("test-name3"))
 
         every { matomoAnalytics.trackEvent(ofType<AnalyticsEvent.AddProductToComparison>()) } returns Unit
+        every { matomoAnalytics.trackEvent(ofType<AnalyticsEvent.CompareProducts>()) } returns Unit
 
         val flowItems = mutableListOf<List<CompareProduct>>()
         val job = launch {
