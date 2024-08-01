@@ -20,7 +20,7 @@ class SentryAnalytics @Inject constructor(
 
     private val enabledFromPrefs get() = sharedPreferences.getBoolean(prefKey, false)
 
-    private val listener: (SharedPreferences, String) -> Unit = { _, key ->
+    private val listener: (SharedPreferences, String?) -> Unit = { _, key ->
         if (key == prefKey) refresh()
     }
 

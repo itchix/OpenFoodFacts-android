@@ -1,63 +1,73 @@
 github:
-- .github/**/*
+- changed-files:
+  - any-glob-to-any-file: '.github/**/*'
 
 taxonomies:
-- app/src/androidTest/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesRepositoryTest.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesManager.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/Taxonomy.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesRepository.kt
+- changed-files:
+  - any-glob-to-any-file: 'app/src/androidTest/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesRepositoryTest.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesManager.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/Taxonomy.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/TaxonomiesRepository.kt'
 
 lists:
-- app/src/main/res/menu/menu_your_listed_products.xml
-- app/src/main/res/layout/your_listed_products_item.xml
-- app/src/main/res/layout/activity_your_listed_products.xml
-- app/src/main/res/layout-v21/activity_your_listed_products.xml
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/ListedProduct.java
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlist/ProductListAdapter.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlist/ProductListActivity.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlists/ProductListsAdapter.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlists/ProductListsActivity.kt
+- changed-files:
+  - any-glob-to-any-file: 'app/src/main/res/menu/menu_your_listed_products.xml'
+  - any-glob-to-any-file: 'app/src/main/res/layout/your_listed_products_item.xml'
+  - any-glob-to-any-file: 'app/src/main/res/layout/activity_your_listed_products.xml'
+  - any-glob-to-any-file: 'app/src/main/res/layout-v21/activity_your_listed_products.xml'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/ListedProduct.java'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlist/ProductListAdapter.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlist/ProductListActivity.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlists/ProductListsAdapter.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/productlists/ProductListsActivity.kt'
 
 allergen alert:
-- app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponseTestData.kt
-- app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapperTest.kt
-- app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenTest.kt
-- app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponseTest.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAlertViewModel.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAdapter.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAlertFragment.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/AllergenPreferencesRepository.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponse.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenName.java
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapperDeserializer.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapper.kt
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/Allergen.java
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenHelper.kt
+- changed-files:
+  - any-glob-to-any-file: 'app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponseTestData.kt'
+  - any-glob-to-any-file: 'app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapperTest.kt'
+  - any-glob-to-any-file: 'app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenTest.kt'
+  - any-glob-to-any-file: 'app/src/test/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponseTest.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAlertViewModel.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAdapter.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/features/allergensalert/AllergensAlertFragment.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/AllergenPreferencesRepository.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenResponse.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenName.java'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapperDeserializer.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergensWrapper.kt'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/Allergen.java'
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/models/entities/allergen/AllergenHelper.kt'
 
 questions:
-- app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/RobotoffRepository.kt
+- changed-files:
+  - any-glob-to-any-file: 'app/src/main/java/openfoodfacts/github/scrachx/openfood/repositories/RobotoffRepository.kt'
 
 screenshots:
-- app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotParameter.kt
-- app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotActivityTestRule.kt
-- app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotTaker.kt
-- app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotParametersProvider.kt
-- app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotsLocaleProvider.kt
+- changed-files:
+  - any-glob-to-any-file: 'app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotParameter.kt'
+  - any-glob-to-any-file: 'app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotActivityTestRule.kt'
+  - any-glob-to-any-file: 'app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotTaker.kt'
+  - any-glob-to-any-file: 'app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotParametersProvider.kt'
+  - any-glob-to-any-file: 'app/src/androidTestScreenshots/java/openfoodfacts/github/scrachx/openfood/test/ScreenshotsLocaleProvider.kt'
 
 translations:
-- app/src/off/res/values-*
-- app/src/obf/res/values-*
-- app/src/opf/res/values-*
-- app/src/opff/res/values-*
+- changed-files:
+  - any-glob-to-any-file: 'app/src/off/res/values-*'
+  - any-glob-to-any-file: 'app/src/obf/res/values-*'
+  - any-glob-to-any-file: 'app/src/opf/res/values-*'
+  - any-glob-to-any-file: 'app/src/opff/res/values-*'
 
 open beauty facts:
-- app/src/obf/res/values-*
+- changed-files:
+  - any-glob-to-any-file: 'app/src/obf/res/values-*'
 
 open products facts:
-- app/src/opf/res/values-*
+- changed-files:
+  - any-glob-to-any-file: 'app/src/opf/res/values-*'
 
 open pet food facts:
-- app/src/opff/res/values-*
+- changed-files:
+  - any-glob-to-any-file: 'app/src/opff/res/values-*'
 
 changelog:
-- app/src/main/assets/changelog/*
+  - any-glob-to-any-file: 'app/src/main/assets/changelog/*'
