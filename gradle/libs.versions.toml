@@ -1,6 +1,6 @@
 [versions]
 # https://kotlinlang.org/docs/releases.html#release-details
-kotlin = "1.8.22"
+kotlin = "1.9.22"
 # https://github.com/Kotlin/kotlinx.coroutines
 kotlin-coroutines = "1.7.3"
 # https://github.com/FasterXML/jackson
@@ -19,12 +19,13 @@ eventbus = "3.3.1"
 # https://junit.org/junit5/
 junit5 = "5.9.3"
 androidx-hilt = "1.0.0"
-org-mockito = "5.5.0"
-mockk = "1.13.5"
+org-mockito = "5.10.0"
+mockk = "1.13.10"
 com-squareup-retrofit2 = "2.6.4"
 androidx-test-espresso = "3.4.0"
 truth = "1.1.3"
 ui = "1.4.3"
+core-splashscreen = "1.0.1"
 
 [libraries]
 # Gradle Plugins
@@ -67,6 +68,7 @@ androidx-viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
 androidx-startup-runtime = "androidx.startup:startup-runtime:1.1.1"
 androidx-work-runtime = "androidx.work:work-runtime-ktx:2.7.1"
 androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
 
 # ML Kit
 barcode-scanning = "com.google.mlkit:barcode-scanning:17.0.0"
@@ -116,7 +118,7 @@ easyimage = "com.github.jkwiecien:EasyImage:1.4.0"
 
 # Barcode and QR Scanner
 # TODO: cannot upgrade, requires API 24 or higher
-zxing-core = "com.google.zxing:core:3.5.2"
+zxing-core = "com.google.zxing:core:3.5.3"
 zxing-android-embedded = "com.journeyapps:zxing-android-embedded:3.6.0"
 
 # UI Component : ImageView with Zooming
@@ -137,7 +139,7 @@ android-image-cropper = "com.github.CanHub:Android-Image-Cropper:3.1.3"
 nachos = "com.github.hootsuite:nachos:1.2.0"
 
 # Crash analytics
-sentry-android = "io.sentry:sentry-android:6.27.0"
+sentry-android = "io.sentry:sentry-android:7.3.0"
 matomo = "com.github.matomo-org:matomo-sdk-android:4.1.4"
 
 # ShowCaseView dependency
@@ -159,7 +161,7 @@ truth-java8 = { module = "com.google.truth.extensions:truth-java8-extension", ve
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit5" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
-orchestrator = "androidx.test:orchestrator:1.4.1"
+orchestrator = "androidx.test:orchestrator:1.4.2"
 
 # Hilt Testing
 hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
@@ -171,7 +173,7 @@ dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = 
 # AndroidX Test
 androidx-test-runner = "androidx.test:runner:1.4.0"
 androidx-test-rules = "androidx.test:rules:1.4.0"
-androidx-test-ext = "androidx.test.ext:junit:1.1.3"
+androidx-test-ext = "androidx.test.ext:junit:1.1.5"
 
 # Espresso
 androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espresso" }
@@ -249,7 +251,7 @@ testing = [
 [plugins]
 resourceplaceholders = "de.timfreiheit.resourceplaceholders:0.2"
 dokka = "org.jetbrains.dokka:1.7.0"
-sonarqube = "org.sonarqube:4.3.1.3277"
+sonarqube = "org.sonarqube:5.0.0.4638"
 detekt = "io.gitlab.arturbosch.detekt:1.23.1"
 versions = "com.github.ben-manes.versions:0.41.0"
 updates = "nl.littlerobots.version-catalog-update:0.5.1"

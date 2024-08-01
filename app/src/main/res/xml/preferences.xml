@@ -18,6 +18,7 @@
             android:defaultValue="@string/pref_app_theme_default"
             android:dialogTitle="@string/pref_app_theme_dialog_title"
             android:key="@string/pref_app_theme_key"
+            android:icon="@drawable/ic_preference_theme"
             android:title="@string/pref_app_theme_title"
             app:useSimpleSummaryProvider="true" />
 
@@ -25,6 +26,7 @@
             android:defaultValue="@string/kcal"
             android:dialogTitle="@string/pref_energy_unit_title"
             android:key="@string/pref_energy_unit_key"
+            android:icon="@drawable/ic_preference_energy"
             android:title="@string/pref_energy_unit_title"
             app:useSimpleSummaryProvider="true" />
 
@@ -33,18 +35,21 @@
             android:dialogTitle="@string/pref_volume_unit_title"
             android:key="@string/pref_volume_unit_key"
             android:title="@string/pref_volume_unit_title"
+            android:icon="@drawable/ic_preference_volume"
             app:useSimpleSummaryProvider="true" />
 
         <Preference
             android:dialogTitle="@string/pref_delete_history_title"
             android:key="@string/pref_delete_history_key"
             android:title="@string/pref_delete_history_title"
+            android:icon="@drawable/ic_preference_trash"
             app:summary="@string/pref_delete_history_summary" />
 
         <ListPreference
             android:dialogTitle="@string/pref_country_dialog_title"
             android:key="@string/pref_country_key"
             android:title="@string/pref_country_title"
+            android:icon="@drawable/ic_preference_country"
             app:summary="@string/pref_country_summary" />
 
         <SwitchPreference
@@ -52,24 +57,28 @@
             android:key="@string/pref_scanner_mlkit_key"
             android:title="@string/pref_scanner_mlkit_title"
             app:summaryOff="@string/pref_scanner_mlkit_summaryOff"
+            android:icon="@drawable/ic_preference_scanner"
             app:summaryOn="@string/pref_scanner_mlkit_summaryOn" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="startScan"
             android:title="@string/pref_scan_startup_title"
+            android:icon="@drawable/ic_preference_startup"
             app:summary="@string/pref_scan_startup_summary" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/pref_power_mode_key"
             android:title="@string/pref_power_mode_title"
+            android:icon="@drawable/ic_preference_power_mode"
             app:summary="@string/pref_power_mode_summary" />
 
         <Preference
             android:defaultValue="false"
             android:key="@string/pref_export_db_key"
             android:title="@string/pref_export_db_title"
+            android:icon="@drawable/ic_preference_database_export"
             app:summary="@string/pref_export_db_summary" />
 
 
@@ -82,6 +91,7 @@
             android:key="@string/pref_enable_mobile_data_key"
             android:summaryOff="@string/pref_enable_mobile_data_summary_off"
             android:summaryOn="@string/pref_enable_mobile_data_summary_on"
+            android:icon="@drawable/ic_preference_mobile_data"
             android:title="@string/pref_enable_mobile_data_title" />
 
         <ListPreference
@@ -90,12 +100,14 @@
             android:key="@string/pref_resolution_key"
             android:selectable="true"
             android:summary="@string/pref_resolution_summary"
+            android:icon="@drawable/ic_preference_image_res"
             android:title="@string/pref_resolution_title" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/pref_low_battery_key"
             android:summaryOn="@string/pref_low_battery_summary"
+            android:icon="@drawable/ic_preference_no_image"
             android:title="@string/pref_low_battery_title" />
         android:summaryOff="@string/pref_low_battery_summary" />
 
@@ -113,7 +125,8 @@
 
         <Preference
             android:summary="@string/Donation"
-            android:title="@string/Donate">
+            android:title="@string/Donate"
+            android:icon="@drawable/ic_preference_donate">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="@string/donation_url" />
@@ -122,6 +135,7 @@
         <Preference
             android:key="@string/pref_help_translate_key"
             android:summary="@string/pref_help_translate_summary"
+            android:icon="@drawable/ic_preference_language"
             android:title="@string/pref_help_translate_title" />
 
 
@@ -129,6 +143,7 @@
             android:defaultValue="true"
             android:key="cropNewImage"
             android:summaryOn="@string/pref_crop_new_images_summary"
+            android:icon="@drawable/ic_preference_crop"
             android:title="@string/pref_crop_new_images_title" />
         android:summaryOff="@string/pref_crop_new_images_summary" />
 
@@ -136,6 +151,7 @@
             android:defaultValue="true"
             android:key="@string/pref_fast_addition_key"
             android:summaryOn="@string/pref_fast_addition_summary"
+            android:icon="@drawable/ic_preference_fast"
             android:title="@string/pref_fast_addition_title" />
         android:summaryOff="@string/pref_fast_addition_summary" />
 
@@ -143,6 +159,7 @@
             android:defaultValue="false"
             android:key="@string/pref_contribution_tab_key"
             android:summaryOn="@string/pref_contribution_tab_summary"
+            android:icon="@drawable/ic_preference_share"
             android:title="@string/pref_contribution_tab_title" />
         android:summaryOff="@string/pref_contribution_tab_summary" />
 
@@ -150,6 +167,7 @@
             android:defaultValue="false"
             android:key="@string/pref_show_product_photos_key"
             android:summaryOn="@string/pref_show_product_photos_summary"
+            android:icon="@drawable/ic_preference_all_products"
             android:title="@string/pref_show_product_photos_title" />
         android:summaryOff="@string/pref_show_product_photos_summary" />
 
@@ -164,6 +182,7 @@
             android:key="@string/pref_crash_reporting_key"
             android:summaryOff="@string/preference_crash_summary"
             android:summaryOn="@string/preference_crash_summary"
+            android:icon="@drawable/ic_preference_crash_report"
             android:title="@string/preference_crash_title" />
 
         <SwitchPreference
@@ -171,6 +190,7 @@
             android:key="@string/pref_analytics_reporting_key"
             android:summaryOff="@string/preference_analytics_summary"
             android:summaryOn="@string/preference_analytics_summary"
+            android:icon="@drawable/ic_preference_send_data"
             android:title="@string/preference_analytics_title" />
 
     </PreferenceCategory>
@@ -183,20 +203,25 @@
         <Preference
             android:key="@string/pref_contact_us_key"
             android:summary="@string/pref_contact_us_summary"
+            android:icon="@drawable/ic_preference_contact"
             android:title="@string/pref_contact_us_title" />
 
         <Preference
             android:key="@string/pref_faq_key"
             android:summary="@string/pref_faq_summary"
+            android:icon="@drawable/ic_preference_faq"
             android:title="@string/pref_faq_title" />
+
         <Preference
             android:key="@string/pref_rate_us_key"
             android:summary="@string/pref_rate_us_title"
+            android:icon="@drawable/ic_preference_star"
             android:title="@string/pref_rate_us_summary" />
 
         <Preference
             android:key="@string/pref_terms_key"
             android:summary="@string/pref_terms_summary"
+            android:icon="@drawable/ic_preference_terms"
             android:title="@string/pref_terms_title" />
 
         <Preference

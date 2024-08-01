@@ -31,7 +31,7 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Run detekt
-        uses: gradle/gradle-build-action@v2.9.0
+        uses: gradle/gradle-build-action@v2.12.0
         with:
           arguments: detekt
 
@@ -58,7 +58,7 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Run unit tests
-        uses: gradle/gradle-build-action@v2.9.0
+        uses: gradle/gradle-build-action@v2.12.0
         with:
           arguments: >
             testObfPlaystoreDebugUnitTest
@@ -85,7 +85,7 @@ jobs:
         run: 'echo "ndk.dir=${ANDROID_HOME}/ndk-bundle" > local.properties'
 
       - name: Assemble debug APKs
-        uses: gradle/gradle-build-action@v2.9.0
+        uses: gradle/gradle-build-action@v2.12.0
         with:
           arguments: assembleDebug
 
@@ -142,12 +142,12 @@ jobs:
         run: "echo \"org.gradle.jvmargs=-Xmx4096m\" >> gradle.properties"
 
       - name: Lint sources
-        uses: gradle/gradle-build-action@v2.9.0
+        uses: gradle/gradle-build-action@v2.12.0
         with:
           arguments: lint --stacktrace
 
       - name: Generate GitHub annotations
-        uses: yutailang0119/action-android-lint@v3
+        uses: yutailang0119/action-android-lint@v4
         with:
           report-path: ./app/build/reports/lint-results-offPlaystoreDebug.xml
 
@@ -172,12 +172,12 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Generate documentation
-        uses: gradle/gradle-build-action@v2.9.0
+        uses: gradle/gradle-build-action@v2.12.0
         with:
           arguments: dokkaHtml
 
       - name: Deploy documentation to Github Pages
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           branch: gh-pages
           folder: app/build/dokka/html/

@@ -98,6 +98,7 @@ class ProductViewFragment : Fragment(), IProductView, OnRefreshListener {
         requireActivity()
     )
 
+    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem) = onOptionsItemSelected(requireActivity(), item)
 
     override fun onRefresh() {

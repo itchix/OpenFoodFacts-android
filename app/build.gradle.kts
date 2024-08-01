@@ -33,6 +33,10 @@ fun obtainTestBuildType(): String {
     return project.properties.getOrDefault("testBuildType", result) as String
 }
 
+kotlin {
+    jvmToolchain(17)
+}
+
 dependencies {
 
     // Kotlin coroutines
@@ -130,7 +134,7 @@ dependencies {
     implementation(libs.showcaseview)
 
     // SplashScreen on API 31 and higher
-    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation(libs.androidx.core.splashscreen)
 
     // Unit Testing
     testImplementation(libs.bundles.testing)
@@ -179,7 +183,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.8"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
 
     flavorDimensions += listOf("versionCode", "platform")
@@ -328,12 +332,12 @@ android {
 
     compileOptions {
         // Sets Java compatibility to Java 8
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 
     lint {
