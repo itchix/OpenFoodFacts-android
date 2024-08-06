@@ -198,8 +198,8 @@ class ProductsAPITest {
         fun setupClient() {
             val httpClientWithAuth = OkHttpClient.Builder()
                 .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                .connectTimeout(Duration.ofSeconds(30))
-                .readTimeout(Duration.ofSeconds(30))
+                .connectTimeout(Duration.ZERO)
+                .readTimeout(Duration.ZERO)
                 .addInterceptor {
                     val origReq = it.request()
                     it.proceed(
