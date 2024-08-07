@@ -17,8 +17,10 @@ import openfoodfacts.github.scrachx.openfood.models.entities.SendProduct
 import openfoodfacts.github.scrachx.openfood.network.ProductsAPITest.SearchSubject.Companion.assertThat
 import openfoodfacts.github.scrachx.openfood.network.services.ProductsAPI
 import openfoodfacts.github.scrachx.openfood.utils.getUserAgent
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 import retrofit2.create
@@ -111,10 +113,11 @@ class ProductsAPITest {
         assertThat(search).hasFoundProducts()
     }
 
+    @ExperimentalCoroutinesApi
     @Test
     fun `products by city paris not found`() = runBlocking {
-        val response = prodClient.getProductsByCity("paris")
-        assertThat(response).hasFoundNoProducts()
+        val exception = assertThrows<Exception> { prodClient.getProductsByCity("paris") }
+        Assertions.assertEquals("HTTP 404", exception.message?.trim())
     }
 
     @ExperimentalCoroutinesApi
@@ -127,7 +130,7 @@ class ProductsAPITest {
 
     @Test
     fun `product not found`() = runBlocking {
-        val barcode = "457457457"
+        val barcode = "457457457457"
         val state = prodClient.getProductByBarcode(
             barcode,
             "code",
