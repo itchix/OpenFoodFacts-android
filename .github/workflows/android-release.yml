@@ -28,7 +28,7 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Run unit tests
-        uses: gradle/actions/setup-gradle@v3.5.0
+        uses: gradle/actions/setup-gradle@v4.1.0
       - name: Run the tests for OBF
         run: ./gradlew testObfPlaystoreDebugUnitTest
       - name: Run the tests for OFF
