@@ -1,4 +1,4 @@
-<img height='175' src="https://static.openfoodfacts.org/images/svg/openfoodfacts-logo-en.svg" align="left" hspace="1" vspace="1">
+<img height='175' src="app/src/off/openfoodfacts-logo-en.svg" align="left" hspace="1" vspace="1">
 
 Open Food Facts - Legacy Android app (still used for Open Beauty, Pet Food and Products Facts)
 =============================
