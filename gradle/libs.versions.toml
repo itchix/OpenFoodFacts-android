@@ -108,7 +108,7 @@ greendao = { module = "org.greenrobot:greendao", version.ref = "greendao" }
 eventbus-runtime = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
 eventbus-compiler = { module = "org.greenrobot:eventbus-annotation-processor", version.ref = "eventbus" }
 # Material Design
-material = "com.google.android.material:material:1.6.1"
+material = "com.google.android.material:material:1.12.0"
 
 # Image Loading
 picasso = "com.squareup.picasso:picasso:2.8"
