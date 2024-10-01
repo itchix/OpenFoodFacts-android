@@ -4,7 +4,7 @@ kotlin = "1.9.22"
 # https://github.com/Kotlin/kotlinx.coroutines
 kotlin-coroutines = "1.7.3"
 # https://github.com/FasterXML/jackson
-jackson = "2.12.3"
+jackson = "2.16.1"
 # https://greenrobot.org/greendao/
 greendao = "3.3.0"
 # https://github.com/googlecodelabs/android-hilt
