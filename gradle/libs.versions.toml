@@ -171,7 +171,7 @@ dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
 
 # AndroidX Test
-androidx-test-runner = "androidx.test:runner:1.4.0"
+androidx-test-runner = "androidx.test:runner:1.6.2"
 androidx-test-rules = "androidx.test:rules:1.4.0"
 androidx-test-ext = "androidx.test.ext:junit:1.1.5"
 
