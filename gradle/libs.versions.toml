@@ -2,7 +2,7 @@
 # https://kotlinlang.org/docs/releases.html#release-details
 kotlin = "1.9.22"
 # https://github.com/Kotlin/kotlinx.coroutines
-kotlin-coroutines = "1.7.3"
+kotlin-coroutines = "1.8.1"
 # https://github.com/FasterXML/jackson
 jackson = "2.12.3"
 # https://greenrobot.org/greendao/
