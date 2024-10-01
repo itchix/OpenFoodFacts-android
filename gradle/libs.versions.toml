@@ -126,7 +126,7 @@ photoview = "com.github.chrisbanes:PhotoView:2.3.0"
 
 # UI Component : Material Drawer
 # https://github.com/mikepenz/MaterialDrawer/commit/3b2cb1db4c3b6afe639b0f3c21c03c1de68648a3
-materialdrawer = "com.mikepenz:materialdrawer:7.0.0"
+materialdrawer = "com.mikepenz:materialdrawer:9.0.2"
 # DO NOT UPDATE : RecyclerViewCacheUtil removed, needs rework
 fastadapter-commons = "com.mikepenz:fastadapter-commons:3.3.1"
 
