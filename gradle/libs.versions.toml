@@ -85,7 +85,7 @@ androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref =
 networking-retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "com-squareup-retrofit2" }
 networking-retrofit-converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", version.ref = "com-squareup-retrofit2" }
 networking-retrofit-converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "com-squareup-retrofit2" }
-networking-okhttp3-logging-interceptor = "com.squareup.okhttp3:logging-interceptor:3.12.13"
+networking-okhttp3-logging-interceptor = "com.squareup.okhttp3:logging-interceptor:4.12.0"
 
 # Logging
 logcat = "com.squareup.logcat:logcat:0.1"
