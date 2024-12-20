@@ -93,6 +93,73 @@ lane :release_off do
     )
 end
 
+lane :release-to-app do
+    PACKAGE_NAME = CredentialsManager::AppfileConfig.try_fetch_value(:package_name)
+    gradle_file = "./app/build.gradle.kts"
+
+    #fetch versionName from current release branch name
+    versionName = version_to_use_from_git_branch(gitBranch: git_branch).to_s
+    UI.important "Using versionName #{versionName}"
+
+    #fetch versionCode from playstore and bump it
+    versionCode = play_store_version_code_to_upload_to().to_s
+
+    UI.important "Releasing android app #{PACKAGE_NAME} v#{versionName} \##{versionCode}"
+
+    android_set_version_name(
+        version_name: versionName,
+        gradle_file: gradle_file
+    )
+    increment_version_code(
+        version_code: versionCode,
+        gradle_file_path: gradle_file
+    )
+
+    #build the bundle
+    gradle(
+        project_dir: './',
+        task: 'clean bundle',
+        build_type: 'offRelease',
+        platform: 'playstore'
+    )
+
+    #upload the bundle to internal track of play store
+    supply(
+        track: 'internal',
+        skip_upload_apk: true,
+#        version_codes_to_retain: ['12', '23'],
+        package_name: PACKAGE_NAME,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
+    )
+# Disabled on May 8th to try to debug the build
+    #FLAVOR = SharedValues::GRADLE_FLAVOR + SharedValues::GRADLE_BUILD_TYPE
+    #sentry_upload_proguard(
+    #  org_slug: 'openfoodfacts',
+    #  project_slug: 'openfoodfacts-android',
+    #  android_manifest_path: './app/build/intermediates/merged_manifests/' + FLAVOR + '/out/AndroidManifest.xml',
+    #  mapping_path: './app/build/outputs/mapping/' + FLAVOR + '/mapping.txt',
+    #)
+
+    sentry_create_release(
+        org_slug: 'openfoodfacts',
+        project_slug: 'openfoodfacts-android',
+        version: PACKAGE_NAME + '@' + versionName + '+' + versionCode,
+        finalize: false # Release will be finalized by the "finalize_sentry" lane, when the version is in production
+    )
+
+    sentry_set_commits(
+        org_slug: 'openfoodfacts',
+        project_slug: 'openfoodfacts-android',
+        version: PACKAGE_NAME + '@' + versionName + '+' + versionCode,
+        auto: true, # enable completely automated commit management
+        clear: false # clear all current commits from the release
+    )
+end
+
+
 desc 'Create a release of Open Products Facts and upload to internal channel of playstore'
 lane :release_opf do
     PACKAGE_NAME = CredentialsManager::AppfileConfig.try_fetch_value(:package_name)
