@@ -250,7 +250,7 @@ testing = [
 
 [plugins]
 resourceplaceholders = "de.timfreiheit.resourceplaceholders:0.2"
-dokka = "org.jetbrains.dokka:1.7.0"
+dokka = "org.jetbrains.dokka:2.0.0"
 sonarqube = "org.sonarqube:5.0.0.4638"
 detekt = "io.gitlab.arturbosch.detekt:1.23.1"
 versions = "com.github.ben-manes.versions:0.41.0"
