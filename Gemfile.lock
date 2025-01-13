@@ -114,7 +114,7 @@ GEM
     fastlane-plugin-get_version_code (0.2.0)
     fastlane-plugin-get_version_name (0.2.2)
     fastlane-plugin-increment_version_code (0.4.3)
-    fastlane-plugin-sentry (1.24.0)
+    fastlane-plugin-sentry (1.26.0)
       os (~> 1.1, >= 1.1.4)
     fastlane-plugin-versioning_android (0.1.1)
     fastlane-sirp (1.0.0)
