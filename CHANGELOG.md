@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.10.3](https://github.com/openfoodfacts/openfoodfacts-androidapp/compare/v3.10.2...v3.10.3) (2025-01-27)
+
+
+### Bug Fixes
+
+* Fix ProductsAPITest ([#5267](https://github.com/openfoodfacts/openfoodfacts-androidapp/issues/5267)) ([fb837b7](https://github.com/openfoodfacts/openfoodfacts-androidapp/commit/fb837b7b8bf4d1bf91a47ba2d5c24b6958ed1a4c))
+* Fixed typo in german translation ([#5028](https://github.com/openfoodfacts/openfoodfacts-androidapp/issues/5028)) ([b14445d](https://github.com/openfoodfacts/openfoodfacts-androidapp/commit/b14445d9b0ce4c5e5fa4461c9cfdf4c048b27b05))
+
 ## [3.10.2](https://github.com/openfoodfacts/openfoodfacts-androidapp/compare/v3.10.1...v3.10.2) (2023-04-06)
 
 
