@@ -31,6 +31,7 @@ import openfoodfacts.github.scrachx.openfood.R
 import openfoodfacts.github.scrachx.openfood.analytics.AnalyticsEvent
 import openfoodfacts.github.scrachx.openfood.analytics.MatomoAnalytics
 import openfoodfacts.github.scrachx.openfood.customtabs.CustomTabActivityHelper
+import openfoodfacts.github.scrachx.openfood.customtabs.WebViewFallback
 import openfoodfacts.github.scrachx.openfood.databinding.ActivityProductBrowsingListBinding
 import openfoodfacts.github.scrachx.openfood.features.adapters.ProductSearchAdapter
 import openfoodfacts.github.scrachx.openfood.features.product.view.ProductViewActivityStarter
@@ -251,7 +252,7 @@ class ProductSearchActivity : BaseActivity() {
         binding.btnHungerGames.visibility = View.VISIBLE
         binding.btnHungerGames.text = resources.getString(R.string.hunger_game_call_to_action, mSearchInfo.searchTitle)
         binding.btnHungerGames.setOnClickListener {
-            CustomTabActivityHelper.openCustomTab(this, customTabsIntent, url, null)
+            CustomTabActivityHelper.openCustomTab(this, customTabsIntent, url, WebViewFallback())
         }
     }
 
